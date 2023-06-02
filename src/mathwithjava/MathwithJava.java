@@ -15,6 +15,11 @@ public class MathwithJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        
+        Operations op = new Operations();
+        
+        System.out.println(op.heronFormula());
     }
     
 }
