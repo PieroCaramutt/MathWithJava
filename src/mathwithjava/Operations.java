@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Operations {
     
-    public Double addition(){
+    public Double addition(){ // This function will add as much number you enter 
         
         ArrayList<Double> nums = new ArrayList();
         Double add = 0.0;
@@ -39,7 +39,7 @@ public class Operations {
         return add;
     }
     
-    public Double subtraction(){
+    public Double subtraction(){ //This function will substract as much numbers you enter but using the first number as a base to substract
         ArrayList<Double> nums = new ArrayList();
         
         Double sub;
@@ -75,7 +75,7 @@ public class Operations {
         return sub;
     }
     
-    public Double division(){
+    public Double division(){ //This function will perform a divition of the numbers that you enter in a consecutive way using the first one as a base to divide
         ArrayList<Double> nums = new ArrayList();
         
         Double div;
@@ -101,9 +101,9 @@ public class Operations {
         }
         
         return div;
-    }
+    } 
     
-    public Double multiply(){
+    public Double multiply(){ //This function will multiply all the number that you enter
         ArrayList<Double> nums = new ArrayList();
         
         Double mul;
@@ -139,7 +139,7 @@ public class Operations {
         return mul;
     }
     
-    public Double reminder(){
+    public Double reminder(){ //This function will return the reminder of the number using the base as a first number and so on.
         ArrayList<Double> nums = new ArrayList();
         
         Double rem;
@@ -147,7 +147,7 @@ public class Operations {
         Scanner in = new Scanner(System.in);
         
         while(ans != -999.0){
-            System.out.println("Write a number to be added and press -999 to end.(Use the first number as a base number to be subtracted)\n");
+            System.out.println("Write a number to be added and press -999 to end.(Use the first number as a base)\n");
             ans = in.nextDouble();
             if(ans != -999.0){
                 nums.add(ans);
@@ -175,7 +175,7 @@ public class Operations {
         return rem;
     }
     
-    public Double powerNum(){
+    public Double powerNum(){ //This function will first number as a base an the second as power and the result will be the next base and so on.
         ArrayList<Double> nums = new ArrayList();
         
         Double power;
@@ -204,7 +204,7 @@ public class Operations {
         return power;
     }
     
-    public Double squareBinomial(){
+    public Double squareBinomial(){ //Give the square Binomial
         Double v1 = 0.0;
         Double v2  = 0.0;
 
@@ -222,7 +222,7 @@ public class Operations {
         
     }
     
-    public Double cubedBinomial(){
+    public Double cubedBinomial(){ //return the Cubed binomial
         
         Double v1 = 0.0;
         Double v2  = 0.0;
@@ -238,7 +238,7 @@ public class Operations {
         return cBinomial;
     }
     
-    public Double heronFormula(){
+    public Double heronFormula(){ //Return the area of a Polygon using the heron formula
         Double area = 0.0;
         Double v1 = 0.0;
         Double v2  = 0.0;
